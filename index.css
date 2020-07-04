@@ -1,0 +1,14 @@
+a:hover{
+    background-color: black;
+}
+a:active{
+    font-weight: bolder;
+}
+.carousel-inner > .carousel-item > .d-block >.w-100 {
+    width: 100%;
+}
+footer{
+    background-color: rgb(199, 48, 48);
+    color: beige;
+    margin-bottom:-100px;
+}

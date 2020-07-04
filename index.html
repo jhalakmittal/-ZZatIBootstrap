@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="index.css">
+
+  <title>πZZati-a complete pizza story</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <h3 class="navbar-brand " style="color: beige;"><b>πZZatI-<span><i>a complete snack story</i></span></b></h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" style="font-weight: bolder;">
+            <a class="nav-link" style="color: beige;" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html" style="color: beige;">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="color: beige;">
+              Extended
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Survey</a>
+              <a class="dropdown-item" href="#">Blogs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Be a part</a>
+              <a class="dropdown-item" href="#">Write for us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" style="color: beige;">Contact us</a>
+          </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#loginmodal">Login</button>
+          <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#signupmodal">Sign-up</button>
+        </div>
+  </nav>
+  <!--login modal-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="loginmodalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginmodalLabel" style="color: brown; text-decoration: underline;">Login here!!!!
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label" style="color: brown;">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label" style="color: brown;">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1" style="color: brown;">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--signup modal-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="signupmodalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginmodalLabel" style="color: brown; text-decoration: underline;"> Get your account.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              
+              <label for="inputPassword" class="col-sm-2 col-form-label" style="color: brown;;">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              
+              <label for="inputPassword" class="col-sm-2 col-form-label" style="color: brown;;">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label" style="color: brown;">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="cinputPassword" class="col-sm-2 col-form-label" style="color: brown;">Confirm Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="cinputPassword">
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1" style="color: brown;">I agree to all the terms &
+                conditions.</label>
+            </div>
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Create account </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" class="img-fluid" src="pizza.jpeg" style="width: 1400px; height: 400px;"
+          alt="First slide">
+
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" class="img-fluid" src="fries.jpeg" style="width: 1400px; height: 400px;"
+          alt="Second slide">
+
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" class="img-fluid" src="shake.jpeg" style="width: 1400px; height: 400px;"
+          alt="Third slide">
+
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" class="img-fluid" src="ice.jpeg" style="width: 1400px; height: 400px;"
+          alt="fourth slide">
+
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" class="img-fluid" src="cake.jpeg" style="width: 1600px; height: 400px" ;
+          alt="fifth slide">
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="album py-5 bg-danger">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="1-1.jpeg" alt="pizza 1" style="height: 265px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline;font-weight: bolder">Double Cheese Burst
+              </h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">A unique and popular pizza type which
+                has a thick crust with yummy liquid
+                cheese inside. <br>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="1-2.jpg" alt="pizza 2" style="height: 265px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Farmhouse Pizza</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">The farmhouse pizza is made by adding
+                toppings which are available in all seasons
+                and they compliment each other perfectly</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="1-3.jpg" alt="pizza 3" style="height: 265px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">chocolate Pizza</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">Pizza with icing sugar, banana,
+                strawberries,
+                marshmallows, sprinkles, smarties, and white chocolate chips.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="2-1.jpg" alt="fries" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Peri peri fries</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">
+                A hot blend of beautiful spices that will take these crispy fries to a whole new level. This is ought to
+                become a family favorite.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="2-2-2.jpeg" alt="fries" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Crinkle-cut fries</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">The best
+                producer of crinkle cuts out here. There's never
+                a soggy fry when they come out.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="2-3.jpeg" alt="fries" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Waffle fries</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">The potato is turned 90° between
+                cuts, the result is waffle fries. Potato chips
+                with a waffle fry cut. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="3-1.jpg" alt="shake" style="height: 325px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Chocolate shake</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">The perfect chocolate shake made with
+                three simple ingredients. It's so
+                creamy and decadent, you're sure to make it over and over.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="3-2.jpg" alt="shake" style="height: 325px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Cranberry shake</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">A great blend of fresh cranberries,
+                sweet bananas and honey to prepare the most exotic drink that comes with the topping of vanilla icecream
+                and chocolate syrup.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="3-3.jpg" alt="shake" style="height: 325px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Oreo shake</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">No matter how you put Oreo Cookies
+                and ice cream together, you know it's going to be
+                good. This cool, creamy, chocolaty treat is case in point.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="4-1.jpg" alt="icecream" style="height: 255px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Cassata</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">Cassata, like pizza, comes from
+                Italy, so finish the night with a slice of this
+                colourful layered fruit, ice-cream and chocolate creation.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="4-2.jpeg" alt="icecream" style="height: 255px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Chocolate icecream
+              </h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">Chocolate Ice Cream features an ultra
+                rich, thick, and creamy double chocolate custard-based ice cream with chocolate fudge swirled </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="4-3.jpeg" alt="icecream" style="height: 255px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Kesar Pista</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">Exciting new recipe to beat the heat
+                - its very delicious and wonderfully
+                smooth,creamy Pistachio Saffron Ice Cream aka Kesar Pista Ice Cream!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="5-1.jpeg" alt="cake" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Red velvet</h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">A classic Southern Red Velvet Cake
+                recipe from Food Network that's slathered in cream cheese frosting and sprinkled with crushed pecans,
+                rasberries and mint essence.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="5-2.jpeg" alt="cake" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Blueberry Cheesecake
+              </h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">Sunshine-sweet lemon layer cake
+                dotted with juicy blueberries and topped with lush cream cheese frosting, with a perfect fussion of
+                maple syrup and blueberry jam on top. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="5-3.jpeg" alt="cake" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5 style="color: rgb(15, 87, 13); text-decoration: underline; font-weight: bolder">Death By Chocolate
+                Cake
+              </h5>
+              <p class="card-text" style="color: rgb(15, 87, 13); display: block;">
+                Easy Death By Chocolate Cake is a chocolate cake on steroids. There are 2 layers of fudgy chocolate
+                cake, lots of mini chocolate chips, a creamy chocolate frosting and a ganache.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-success">order</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">add to wishlist!</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </main>
+  </div>
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span>&copy;All rights reserved 2020.<br>A complete package of all your needs!</span>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
